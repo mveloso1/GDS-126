@@ -25,13 +25,17 @@ var playerData ={
 		//The idle animation 
     	idle:
 		{
-			fps:15,
+			fps:10,
 			cycle:true,
 			frames:
 			[
-				{width:214, height:579, startX:0, startY:0},
-				{width:128, height:128, startX:128, startY:0}
-				
+				{width:198, height:576, startX:0, startY:0},
+				{width:198, height:576, startX:198, startY:0},
+				{width:198, height:576, startX:396, startY:0},
+				{width:198, height:576, startX:594, startY:0},
+				{width:198, height:576, startX:792, startY:0},
+				{width:198, height:576, startX:990, startY:0},
+				{width:198, height:576, startX:1188, startY:0}
 			]
 		},
 		//The walwidth:128, height:128,
