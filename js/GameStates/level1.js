@@ -9,7 +9,7 @@ var stage = new GameObject({width:canvas.width, height:canvas.height});
 var level = new GameObject({x:0,y:0});
 
 //Avatar
-var wiz = new GameObject({width:128, height:128, spriteData:playerData}).makeSprite(playerData)
+var wiz = new GameObject({width:54, height:144, spriteData:playerData}).makeSprite(playerData)
 wiz.force=1
 
 //The ground
@@ -102,6 +102,7 @@ gameStates[`level1`] = function()
 	if(!keys[`W`] && !keys[`S`] && !keys[`D`] && !keys[`A`] && !keys[` `] && canShoot && wiz.canJump)
 	{
 		wiz.changeState(`idle`)
+		wiz.width =50;
 	}
 	
 	
@@ -122,6 +123,7 @@ gameStates[`level1`] = function()
 		{
 			if(wiz.canJump)wiz.changeState(`walk`)
 			wiz.vx += wiz.force
+		wiz.width = 100;
 			
 		}
 		
