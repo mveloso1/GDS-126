@@ -102,7 +102,8 @@ gameStates[`level1`] = function()
 	if(!keys[`W`] && !keys[`S`] && !keys[`D`] && !keys[`A`] && !keys[` `] && canShoot && wiz.canJump)
 	{
 		wiz.changeState(`idle`)
-		wiz.width =50;
+		wiz.width =54;
+		wiz.height =144;
 	}
 	
 	
@@ -110,6 +111,8 @@ gameStates[`level1`] = function()
 	{
 		wiz.top={x:0,y:0};
 		wiz.changeState(`crouch`)
+		wiz.width= 81;
+		wiz.height= 100;
 	}
 	else
 	{
@@ -123,7 +126,7 @@ gameStates[`level1`] = function()
 		{
 			if(wiz.canJump)wiz.changeState(`walk`)
 			wiz.vx += wiz.force
-		wiz.width = 100;
+		wiz.width = 81;
 			
 		}
 		
@@ -135,6 +138,7 @@ gameStates[`level1`] = function()
 		{
 			if(wiz.canJump)wiz.changeState(`walk`)
 			wiz.vx += -wiz.force
+			wiz.width = 81;
 		}
 		
 	}
@@ -143,6 +147,7 @@ gameStates[`level1`] = function()
 		wiz.canJump = false;
 		wiz.vy = wiz.jumpHeight;
 		wiz.changeState(`jump`)
+		wiz.width =81;
 		//sounds.play(`splode`,1)
 	}
 	shotTimer--;
@@ -160,6 +165,7 @@ gameStates[`level1`] = function()
 		if(canShoot)
 		{
 			wiz.changeState(`attack`)
+			wiz.width = 81
 			shotTimer = shotDelay
 			//console.log(`Boom`)
 

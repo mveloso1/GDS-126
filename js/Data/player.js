@@ -40,7 +40,7 @@ var playerData ={
 		*/
     	idle:
 		{
-			fps:10,
+			fps:6,
 			cycle:true,
 			frames:[
 		{startX:0,startY:0,width:191,height:562},			
@@ -53,58 +53,64 @@ var playerData ={
 			]
 		},
 		//The walwidth:128, height:128,
+		//2,3,6 and 7 are odd.
 		walk:
 		{
-			fps:1,
+			fps:5,
 			cycle:true,
 			frames:
 			[
-				{width:128, height:128, startX:0, startY:0},
-				{width:128, height:128, startX:128, startY:0},
-				{width:128, height:128, startX:256, startY:0},
-				{width:128, height:128, startX:384, startY:0},
-				{width:128, height:128, startX:512, startY:0}
+				{width:308, height:550, startX:1397, startY:0},
+				{width:319, height:513, startX:1705, startY:0},
+				{width:210, height:533, startX:2024, startY:0},
+				{width:206, height:562, startX:2234, startY:0},
+				{width:316, height:552, startX:2440, startY:0},
+				{width:291, height:498, startX:2756, startY:0},
+				{width:208, height:562, startX:3047, startY:0},
+				{width:223, height:569, startX:3255, startY:0}
 			]
 		},
 		//The jump animation 
 		jump:
 		{
-			fps:15,
+			fps:2,
 			cycle:false,
 			frames:
 			[
-				{width:128, height:128, startX:640, startY:0}
+				{width:223, height:519, startX:3478, startY:0},
+				{width:306, height:519, startX:3654, startY:0},
+				{width:298, height:519, startX:4012, startY:0},
+				{width:318, height:519, startX:4310, startY:0}
 			]
 		},
 		//The crouch animation 
 		crouch:
 		{
-			fps:15,
-			cycle:true,
+			fps:5,
+			cycle:false,
 			frames:
 			[
-				{width:128, height:128, startX:768, startY:0},
-				{width:128, height:128, startX:768, startY:0},
-				{width:128, height:128, startX:768, startY:0},
-				{width:128, height:128, startX:768, startY:0},
-				{width:128, height:128, startX:896, startY:0}
+				{width:175, height:519, startX:4691, startY:0},
+				{width:297, height:503, startX:4866, startY:0},
+				{width:289, height:374, startX:5222, startY:0},
 			]
 		},
 		//The attack animation 
 		attack:
 		{
-			fps:3,
+			fps:5,
 			cycle:false,
 			//width:300,
 			frames:
 			[
-				{width:128, height:128, startX:1024, startY:0},
-				{width:128, height:128, startX:1024, startY:0},
-				{width:128, height:128, startX:1024, startY:0},
-				{width:128, height:128, startX:1152, startY:0},
-				{width:128, height:128, startX:1152, startY:0},
-				{width:128, height:128, startX:1152, startY:0},
-				{width:128, height:128, startX:1152, startY:0}
+				{width:200, height:565, startX:5511, startY:0},
+				{width:294, height:565, startX:5704, startY:0},
+				{width:333, height:565, startX:5998, startY:0},
+				{width:332, height:565, startX:6331, startY:0},
+				{width:343, height:565, startX:6663, startY:0},
+				{width:348, height:565, startX:7006, startY:0},
+				{width:343, height:565, startX:7354, startY:0},
+				{width:311, height:565, startX:7697, startY:0},
 				
 			]
 		}
