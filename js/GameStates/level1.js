@@ -10,6 +10,7 @@ var level = new GameObject({x:0,y:0});
 
 //Avatar
 var wiz = new GameObject({width:54, height:144, spriteData:playerData}).makeSprite(playerData)
+//var wizProjectiles = new GameObjects({width:54, height:144, spriteData:projectiles}).makeSprite(projectiles)
 wiz.force=1
 
 //The ground
@@ -90,7 +91,7 @@ for(let i=0; i<100; i++)
 	//bullets[i].img.src="images/mrt.jpg"
 	bullets[i].makeSprite(playerData)
 	bullets[i].y=-10000
-	bullets[i].changeState(`walk`)
+	bullets[i].changeState(`shoot`)
 }
 
 //console.log(bullets)
@@ -148,7 +149,7 @@ gameStates[`level1`] = function()
 		wiz.vy = wiz.jumpHeight;
 		wiz.changeState(`jump`)
 		wiz.width =81;
-		//sounds.play(`splode`,1)
+		sounds.play(`splode`,1)
 	}
 	shotTimer--;
 	if(shotTimer <=0)
@@ -175,7 +176,7 @@ gameStates[`level1`] = function()
 			bullets[currentBullet].y = wiz.y + 20;
 			bullets[currentBullet].dir = wiz.dir;
 			
-			//sounds.play(`splode`,1)
+			sounds.play(`splode`,1)
 
 			currentBullet++;
 			if(currentBullet>=bullets.length)

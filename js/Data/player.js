@@ -22,22 +22,6 @@ var playerData ={
 		src:`images/DeusIdle.png`
 	},
 	states:{
-		//The idle animation 
-		/*{width:190.55, height:575.65, startX:0, startY:0},
-		{width:192.5, height:565.95, startX:190.55, startY:0},
-		{c192, height:563.7, startX:383.05, startY:0},
-		{width:213.05, height:564.8, startX:575.05, startY:0},
-		{width:210.3, height:565.1, startX:788.1, startY:0},
-		{width:202.65, height:563.5, startX:998.4, startY:0},
-		{width:194.55, height:573, startX:1201.05, startY:0}
-		{width:27, height:72, startX:0, startY:0},
-		{width:27, height:72, startX:27, startY:0},
-		{width:27, height:72, startX:54, startY:0},
-		{width:27, height:72, startX:81, startY:0},
-		{width:27, height:72, startX:108, startY:0},
-		{width:27, height:72, startX:135, startY:0},
-		{width:27, height:72, startX:162, startY:0}
-		*/
     	idle:
 		{
 			fps:6,
@@ -113,7 +97,16 @@ var playerData ={
 				{width:311, height:565, startX:7697, startY:0},
 				
 			]
-		}
-	}
-		
+		},
+		shoot:
+		{
+			fps:6,
+			cycle:true,
+			frames:[
+
+		{startX:0,startY:0,width:100,height:562},
+					
+			]
+		},
+	}	
 }
