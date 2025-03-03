@@ -19,7 +19,7 @@ Properties:
 //hi
 var playerData ={
 	info:{
-		src:`images/DeusIdle.png`
+		src:`images/DeusSpritesheetNEW.png`
 	},
 	states:{
     	idle:
@@ -90,11 +90,14 @@ var playerData ={
 				{width:200, height:565, startX:5511, startY:0},
 				{width:294, height:565, startX:5704, startY:0},
 				{width:333, height:565, startX:5998, startY:0},
-				{width:332, height:565, startX:6331, startY:0},
+				{width:332, height:565, startX:6331, startY:60},
 				{width:343, height:565, startX:6663, startY:0},
-				{width:348, height:565, startX:7006, startY:0},
-				{width:343, height:565, startX:7354, startY:0},
-				{width:311, height:565, startX:7697, startY:0},
+				{width:348, height:565, startX:7006, startY:69},
+				{width:343, height:565, startX:7380, startY:0},
+				{width:311, height:565, startX:7724, startY:0},
+				{width:346, height:565, startX:0, startY:654},
+				{width:311, height:565, startX:346, startY:654},
+				{width:192, height:565, startX:657, startY:654},
 				
 			]
 		},
@@ -104,8 +107,9 @@ var playerData ={
 			cycle:true,
 			frames:[
 
-		{startX:0,startY:0,width:100,height:562},
-					
+		{startX:849,startY:654,width:192,height:209},
+		{startX:1067,startY:654,width:199,height:209},
+		{startX:1266,startY:654,width:192,height:209},
 			]
 		},
 	}	
