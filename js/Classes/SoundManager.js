@@ -43,4 +43,4 @@ soundNodes=null
 
 
 //document.addEventListener(`click`, ()=>  sounds.play(`splode`,.5))
-document.addEventListener(`w`, ()=>  sounds.play(`splode`,.5))
+document.addEventListener(`w`, ()=>  sounds.play(`jump`,.5))

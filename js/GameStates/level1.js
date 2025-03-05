@@ -19,7 +19,7 @@ ground.img.src=`images/ground.png`
 
 //A platform
 var plat = new GameObject({width:256, height:64,y:canvas.height-200, color:"green", world:level})
-
+plat.img.src= 'images/platform.png'
 
 
 var leftBorder = new GameObject({width:50, height:canvas.height, world:level, x:0})
@@ -149,7 +149,7 @@ gameStates[`level1`] = function()
 		wiz.vy = wiz.jumpHeight;
 		wiz.changeState(`jump`)
 		wiz.width =81;
-		sounds.play(`splode`,1)
+		sounds.play(`jump`,0)
 	}
 	shotTimer--;
 	if(shotTimer <=0)
@@ -176,7 +176,7 @@ gameStates[`level1`] = function()
 			bullets[currentBullet].y = wiz.y + 20;
 			bullets[currentBullet].dir = wiz.dir;
 			
-			sounds.play(`splode`,1)
+			sounds.play(`splode`,0)
 
 			currentBullet++;
 			if(currentBullet>=bullets.length)
@@ -270,7 +270,7 @@ gameStates[`level1`] = function()
 	//Applies pattern to ground and platform
 	ground.color = groundPattern
 	plat.color = groundPattern
-
+	plat.drawStaticImage([plat.x,plat.y,64,64])
 	//Sets up pattern for the sky
 	var skyPattern = context.createPattern(sky.img, `repeat`);
 	//Applies pattern to sky
