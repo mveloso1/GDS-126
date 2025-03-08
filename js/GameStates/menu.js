@@ -16,8 +16,8 @@ menuBackground.img.src = "images/Autonomous.png"
 menuBackground.width=canvas.width
 menuBackground.height=canvas.height
 
-gameStates[`menu`] =function(){
 
+gameStates[`menu`] =function(){
 	//Makes the button clickable
 	if(startButton.overlap(mouse))
 	{
@@ -35,7 +35,6 @@ gameStates[`menu`] =function(){
 		//Default Button Graphic
 		startButton.color = `red`
 	}
-	
 	menuBackground.drawStaticImage();
 	startButton.render()
 }

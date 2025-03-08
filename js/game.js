@@ -13,7 +13,6 @@ var timer = setInterval(animate, interval);
 
 /*----------------------------------------------------------------------*/
 gameStates.changeState(`menu`);
-
 //-------------------------AnimationLoop--------------------------------
 
 function animate()
