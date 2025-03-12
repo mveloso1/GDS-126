@@ -12,11 +12,12 @@ startButton.y += 90;
 console.log(startButton.collisionPoints.right)
 
 
+
 var menuBackground = new GameObject();
 menuBackground.img.src = "images/Autonomous.png"
 menuBackground.width=canvas.width
 menuBackground.height=canvas.height
-
+//sounds.play('ambient',0)
 
 gameStates[`menu`] =function(){
 	//Makes the button clickable
@@ -27,17 +28,18 @@ gameStates[`menu`] =function(){
 			//Changes to the game state
 			gameStates.changeState(`level1`)
 			sounds.stop(`ambient`,0)
+			sounds.play(`desert`,1.5)
 		}
 
 		//Hover Effect Graffic
 		startButton.img.src="images/PlayButtonHover.png"
-		startButton.color = `yellow`
+		//startButton.color = `yellow`
 	}
 	else
 	{
 		//Default Button Graphic
 		startButton.img.src="images/PlayButtonStandard.png"
-		startButton.color = `red`
+		//startButton.color = `red`
 	}
 	menuBackground.drawStaticImage();
 	startButton.render()

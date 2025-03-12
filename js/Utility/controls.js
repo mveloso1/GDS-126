@@ -2,6 +2,7 @@ var w = false;
 var a = false;
 var s = false;
 var d = false;
+var l = false;
 var pressed=false;
 
 
@@ -30,6 +31,10 @@ function press(e)
 	{
 		d = true;
 	}
+	if(e.keyCode == 76)
+	{
+		l = true;
+	}
 }
 
 function release(e)
@@ -52,5 +57,9 @@ function release(e)
 	if(e.keyCode == 68)
 	{
 		d = false;
+	}
+	if(e.keyCode == 76)
+	{
+		l = true;
 	}
 }

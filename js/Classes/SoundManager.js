@@ -37,6 +37,7 @@ let soundNodes=document.querySelectorAll(`audio`)
 if(soundNodes.length>0) var sounds=new SoundManager(soundNodes)
 soundNodes=null
 
+//sounds.play('ambient', 0, true);
 
 
 
@@ -44,4 +45,4 @@ soundNodes=null
 
 //document.addEventListener(`click`, ()=>  sounds.play(`splode`,.5))
 document.addEventListener(`w`, ()=>  sounds.play(`jump`,.5))
-//document.addEventListener(`click`, ()=>  sounds.play(`ambient`,.5))
+document.addEventListener(`l`, ()=>  sounds.play(`ambient`,.5))
