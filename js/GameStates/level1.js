@@ -166,7 +166,7 @@ gameStates[`level1`] = function()
 		if(canShoot)
 		{
 			wiz.changeState(`attack`)
-			wiz.width = 81
+			wiz.width = 50
 			shotTimer = shotDelay
 			//console.log(`Boom`)
 
